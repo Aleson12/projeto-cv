@@ -1,0 +1,181 @@
+/*RESET PADRÃO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/*BACKGROUND DO BODY*/
+
+body {
+    background-color: #141414;
+}
+
+/*CUSTOMIZAÇÃO DO HEADER E H1*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    text-align: center;
+}
+
+h1 {
+    width: 621px;
+    color: #5AE4A8;
+    border: 2px solid #5AE4A8;
+    padding: 25px;
+}
+
+/*CUSTOMIZAÇÃO H2 COM TITULO DE FRONTEND*/
+.subtitulo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+h2 {
+    color: #5AE4A8;
+    font-size: 2em;
+}
+
+/* CUSTOMIZAÇÃO DA IMAGEM DO CENTRO*/
+
+.posicionamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.posicionamento>img {
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+}
+
+/*CUSTOMIZAÇÃO DOS ICONES*/
+
+.sec-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+/*CUSTOMIZAÇÃO DO BOTÃO*/
+
+.posicionamento1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 137px;
+}
+
+.sec-imagens>img {
+    height: 114px;
+    width: 112px;
+    padding: 6px;
+    background-color: #55E6AA;
+    border-radius: 10px;
+    box-shadow: 5px 10px black;
+    transition-duration: 500ms;
+    /* declaração da duração da transição, da animação, no elemento PAI*/
+}
+
+.sec-imagens>a {
+    border-radius: 10px;
+    box-shadow: 5px 10px black;
+    transition-duration: 500ms;
+    height: 114px;
+    width: 112px;
+    padding: 6px;
+    background-color: #55E6AA;
+    /* declaração da duração da transição, da animação, no elemento PAI*/
+}
+
+.sec-imagens>img:hover {
+    transform: translateY(-2.1em);
+    /* declaração que especifica como a transição será feita - de acordo com o eixo Y,
+    elevando-o */
+}
+
+.sec-imagens>a:hover {
+    transform: translateY(-2.1em);
+    /* declaração que especifica como a transição será feita - de acordo com o eixo Y,
+    elevando-o */
+}
+
+.posicionamento1>a {
+    padding: 30px 20px 30px 20px;
+    box-shadow: 5px 10px black;
+    border-radius: 5px;
+    background-color: #5AE4A8;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.posicionamento1>a:hover {
+    background-color: #13f392;
+}
+
+.posicionamento>img {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+/* RODAPE*/
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+
+.posicionamento2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+p {
+    color: azure;
+}
+
+.nome:hover {
+    cursor: pointer;
+    color: #13f392;
+}
+
+/* Regra de Media-Query  */
+
+@media only screen and (max-width:690px) {
+
+    /* quando a largura máxima da tela for de 690px, */
+    .subtitulo {
+        height: 100px;
+        /* a altura da seção .subtitulo será de 100px */
+    }
+
+    .posicionamento1 {
+        /* a altura da seção .posicionamento1 será de 431px  */
+        height: 431px;
+    }
+
+    .posicionamento2 {
+        /* a margem superior da seção .posicionamento1 será de -75px */
+        margin-top: -75px;
+    }
+}
